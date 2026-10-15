@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Task Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <p class="eyebrow">STUDENT PRODUCTIVITY</p>
+      <h1>Task Tracker</h1>
+      <p class="subtitle">Plan your study day, one task at a time.</p>
+    </header>
+
+    <form id="task-form" class="task-form">
+      <input id="task-input" type="text" placeholder="e.g. Revise Java OOP" maxlength="100" required />
+      <button type="submit">Add task</button>
+    </form>
+
+    <section class="summary" aria-label="Task summary">
+      <div><span id="total-count">0</span><small>Total</small></div>
+      <div><span id="pending-count">0</span><small>Pending</small></div>
+      <div><span id="done-count">0</span><small>Completed</small></div>
+    </section>
+
+    <div class="list-heading">
+      <h2>My tasks</h2>
+      <button id="clear-done" class="text-button" type="button">Clear completed</button>
+    </div>
+    <ul id="task-list" class="task-list"></ul>
+    <p id="empty-state" class="empty-state">No tasks yet. Add your first task above ✨</p>
+    <footer>Made with HTML, CSS & JavaScript</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
